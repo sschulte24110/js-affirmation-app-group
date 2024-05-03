@@ -4,12 +4,13 @@ let iceCounter = 0;
 
 function onReady() {
   console.log('Javascript is working!');
+  // clearAffirmations();
 }
 
 function fireButton(event) {
   // console.log('fire button');
   const fireEmoji = document.getElementById('emoji-div'); // Target where you want the new item to be inserted
-  fireEmoji.innerHTML += `<div>🔥</div>`;
+  fireEmoji.innerHTML += `<div class="emoji">🔥</div>`;
 
   fireCounter++;
   console.log(fireCounter);
@@ -18,7 +19,7 @@ function fireButton(event) {
 function iceButton(event) {
   // console.log('ice button');
   const iceEmoji = document.getElementById('emoji-div');
-  iceEmoji.innerHTML += `<div>❄️</div>`;
+  iceEmoji.innerHTML += `<div class="emoji">❄️</div>`;
 
   iceCounter++;
   console.log(iceCounter);
@@ -49,3 +50,12 @@ function deleteAffirmation(event) {
     event.target.closest('tr').remove();
   }
 }
+
+// function clearAffirmations() {
+//   document.getElementById('table-body').innerHTML = '';
+
+//   fireCounter = 0;
+//   iceCounter = 0;
+// }
+
+// onReady();
