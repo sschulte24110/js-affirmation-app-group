@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,11 +17,12 @@
   </header>
 
   <main>
-    <section>
+    <section id="buttons">
       <h3>Fire and Ice:</h3>
-      <button>🔥</button>
-      <button>❄️</button>
-      <div>
+      <button onclick="fireButton(event)" id="fire-button">🔥</button>
+      <button onclick="iceButton(event)" id="ice-button">❄️</button>
+
+      <div id="emoji-div">
         <!-- fire and ice emojis go here -->
       </div>
     </section>
@@ -29,16 +30,12 @@
     <section>
       <h3>Create an Affirmation:</h3>
       <form>
-        <input
-          placeholder="Affirmation"
-          type="text">
-        <input
-          placeholder="Author"
-          type="text">
+        <input placeholder="Affirmation" type="text">
+        <input placeholder="Author" type="text">
         <button>Submit</button>
       </form>
     </section>
-    
+
     <section>
       <h3>Your Affirmations:</h3>
       <table>
@@ -70,4 +67,5 @@
     <h5>Thanks for being here. Sincerely. 🙂</h5>
   </footer>
 </body>
+
 </html>
