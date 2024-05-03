@@ -29,10 +29,10 @@
 
     <section>
       <h3>Create an Affirmation:</h3>
-      <form>
-        <input placeholder="Affirmation" type="text">
-        <input placeholder="Author" type="text">
-        <button>Submit</button>
+      <form onsubmit="createAffirmation(event)">
+        <input id="affirmation-input" placeholder="Affirmation" type="text">
+        <input id="author-input" placeholder="Author" type="text">
+        <button type="submit">Submit</button>
       </form>
     </section>
 
@@ -43,10 +43,11 @@
           <tr>
             <th>Affirmation Text</th>
             <th>Affirmation Author</th>
+            <th>Delete</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
+        <tbody id="table-body">
+          <!-- <tr>
             <td>You probably got this!</td>
             <td>Oscar</td>
           </tr>
@@ -57,7 +58,7 @@
           <tr>
             <td>Don't forget to delete these three hardcoded table rows!</td>
             <td>Abby Cadabby</td>
-          </tr>
+          </tr> -->
         </tbody>
       </table>
     </section>

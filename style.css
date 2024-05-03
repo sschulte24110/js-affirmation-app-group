@@ -55,6 +55,7 @@ input {
 button {
   padding: .5em;
   width: 75px;
+  border-radius: 3px;
 }
 
 
@@ -82,3 +83,10 @@ tbody tr:nth-child(odd){
 tbody tr:nth-child(even){
   background: #dcdcdc;
 }
+
+.button-color {
+  color: red;
+  font-size: 20px;
+}
+
+
